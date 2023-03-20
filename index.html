@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="greet">Hoşgeldin,<input type="text" /></h3>
+      <!-- form başlangıç -->
+      <form>
+        <div class="double">
+          <div class="form-harcama">
+            <label>Harcama:</label>
+            <input id="harcama" type="text" placeholder="Gider ismi..." />
+          </div>
+          <div class="form-fiyat">
+            <label>Fiyat:</label>
+            <input id="fiyat" type="number" />
+          </div>
+        </div>
+        <div class="double">
+          <div class="form-durum">
+            <input id="durum" type="checkbox" />
+            <label>Ödendi</label>
+          </div>
+          <button id="ekle-btn">Ekle</button>
+        </div>
+
+        <div class="toplamDiv">
+          Toplam Harcama : <span id="toplam">0</span> &#8378;
+        </div>
+      </form>
+      <!-- form bitiş -->
+      <div class="list"></div>
+      <!-- liste bitiş -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
